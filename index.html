@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Streaming Website</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <header>
+            <h1>100+ HAND PICKED SONGS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic beatae unde, provident voluptates, culpa nulla non nam architecto repellendus libero consequatur. Commodi minima ipsa nisi, tempora deserunt dignissimos dolor.</p>
+            <nav>
+                <ul class="left">
+                    <li><a href="#">Recently added</a></li>
+                    <li><a href="#">Top Pop</a></li>
+                    <li><a href="#">Best of the year</a></li>
+                    <li><a href="#">highly recommand</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Request</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="autoplay_btn"><a href="#">
+                        <label>
+                            <h5>AUTOPLAY</h5>
+                            <input type="checkbox">
+                            <span></span>
+                        </label> 
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="body_content">
+            <div class="title">
+                <span></span>
+                <span>TITLE</span>
+                <span>ARTIST</span>
+                <span>GENRE</span>
+                <span>DURATION</span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="list">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JQUERY CDN LINK -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="data.js"></script>
+<SCript>
+$(document).ready(function(){
+    var list = $(".list");
+    var list_block;
+
+    for(var key in song_list){
+        list_block = $('<div class="list_block"></div>');
+        list.append(list_block);
+
+        list_block.append('<span class=""play_btn><img class="play_icon" src="images/play.png"><img class="pause_icon" src="images/pause.png"></span>')
+        list_block.append('<span class="song_title">'+ song_list[key].title +'</span>');
+        list_block.append('<span class="song_artist">'+ song_list[key].artist +'</span>');
+    }
+})
+
+</SCript>
+</body>
+</html>
