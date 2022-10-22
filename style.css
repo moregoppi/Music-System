@@ -175,3 +175,18 @@ nav ul li a{
 .body_content .beat_animation li:nth-child(4){
     animation-delay: .3s;
 }
+
+.body_content .list_block.isPlaying{
+border: 1px solid #4b4980;
+box-shadow: 0 5px 25px #7471cc5e, 0 0 15px #7471cc5e;
+}   
+
+/* PLAY BUTTON  */
+.body_content span.play_btn img{
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all ease 0.5s;
+}
+.body_content .list_block.isPlaying span.play_btn img{
+    box-shadow: 0 5px 25px #7270cc, 0 0 15px #7270cc;
+}
