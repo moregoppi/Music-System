@@ -103,22 +103,28 @@ nav ul li a{
 .body_content .title span{
     font-size: 20px;
 }
-.body_content .title span:nth-child(1){
+.body_content .title span:nth-child(1),
+.body_content .list_block span:nth-child(1){
     width: 8%;
 }
-.body_content .title span:nth-child(2){
+.body_content .title span:nth-child(2),
+.body_content .list_block span:nth-child(2){
     width: 35%;
 }
-.body_content .title span:nth-child(3){
+.body_content .title span:nth-child(3),
+.body_content .list_block span:nth-child(3){
     width: 16%;
 }
-.body_content .title span:nth-child(4){
+.body_content .title span:nth-child(4),
+.body_content .list_block span:nth-child(4){
     width: 16%;
 }
-.body_content .title span:nth-child(5){
+.body_content .title span:nth-child(5),
+.body_content .list_block span:nth-child(5){
     width: 10%;
 }
-.body_content .title span:nth-child(6){
+.body_content .title span:nth-child(6),
+.body_content .list_block span:nth-child(6){
     width: 10%;
 }
 .body_content .list_block{
@@ -189,4 +195,8 @@ box-shadow: 0 5px 25px #7471cc5e, 0 0 15px #7471cc5e;
 }
 .body_content .list_block.isPlaying span.play_btn img{
     box-shadow: 0 5px 25px #7270cc, 0 0 15px #7270cc;
+}
+/* HIDE AUDIO TRACKS */
+.body_content .list_block .track{
+    display: none;
 }

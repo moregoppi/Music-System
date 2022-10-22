@@ -128,10 +128,33 @@ $(document).ready(function(){
 
         //BEAT ANIMATION
         $(this).parent().parent().find(".beat_animation li").css("animation-play-state", "paused").css("opacity", "1");
-        
+
         //PAUSE CURRENT AUDIO TRACK
         $(this).parent().parent().find(".track audio")[0].pause();
     });
+
+    //AUTOPLAY FUNCTIONALITY
+    $(".autoplay_btn input").on('change', function(){
+        if($(this).is(":checked")){
+           $("audio").on('ended', function(){
+            
+                $(this).parent().parent().next().find("audio")[0].play();
+
+                $(".list_block").removeClass("isPlaying");
+                $(this).parent().parent().next().addClass("isPlaying");
+                $(this).parent().parent().next().find(".beat_animation li").css("animation-play-state", "running").css("opacity", "1");
+
+                $(this).parent().parent().next().find(".play_icon").css("display", "none");
+                $(this).parent().parent().next().find(".pause_icon").css("display", "inline-block");
+           });
+        }else{
+            $("audio").on('ended', function(){
+                $(".beat_animation li").css("animation-play-state", "paused").css("opacity", ".1");
+                $(".pause_icon").css("display", "none");
+                $(".play_icon").css("display", "inline-block");
+            });
+        }
+    }).change();
 })
 
 </SCript>
