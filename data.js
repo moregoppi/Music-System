@@ -41,5 +41,33 @@ var song_list ={
         duration: "4.03",
         track:"Baddal.mp3",
     },
+    "07":{
+        title: "Orange Soda",
+        artist: "Baby Keem",
+        genre: "Pop",
+        duration: "2.26",
+        track:"Orange Soda.mp3",
+    },
+    "08":{
+        title: "Vent",
+        artist: "Baby Keem",
+        genre: "Pop",
+        duration: "2.18",
+        track:"Vent.mp3",
+    },
+    "09":{
+        title: "Praise Lord",
+        artist: "Kanye West & Baby Keem",
+        genre: "Pop",
+        duration: "3.37",
+        track:"Praise Lord.mp3",
+    },
+    "10":{
+        title: "Wants & Needs",
+        artist: "Drake ft. Lil Baby",
+        genre: "Pop",
+        duration: "4.47",
+        track:"Drake ft. Lil Baby _Wants and Needs_ (Music Video)(MP3_128K)_1",
+    },
 
 }
