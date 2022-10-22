@@ -90,3 +90,88 @@ nav ul li a{
 .autoplay_btn input{
     display: none;
 }
+.body_content{
+    margin-top: 30px;
+}
+.body_content .title{
+    background-color: #414072;
+    color: #fff;
+    padding: 20px 5px;
+    border-radius: 10px;
+    display: flex;
+}
+.body_content .title span{
+    font-size: 20px;
+}
+.body_content .title span:nth-child(1){
+    width: 8%;
+}
+.body_content .title span:nth-child(2){
+    width: 35%;
+}
+.body_content .title span:nth-child(3){
+    width: 16%;
+}
+.body_content .title span:nth-child(4){
+    width: 16%;
+}
+.body_content .title span:nth-child(5){
+    width: 10%;
+}
+.body_content .title span:nth-child(6){
+    width: 10%;
+}
+.body_content .list_block{
+    position: relative;
+    padding: 20px 5px;
+    background: #000;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.body_content .list_block span{
+    font-size: 16px;
+    font-weight: 400;
+}
+.body_content .list_block .download_btn{
+    position: absolute;
+    right: 30px;
+}
+.body_content .list_block .download_btn:hover{
+    opacity: .7;
+}
+
+/* BEAT ANIMATION */
+.body_content .beat_animation ul{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.body_content .beat_animation ul li{
+    list-style: none;
+    height: 40px;
+    width: 3px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 5px;
+    transform-origin: bottom;
+    opacity: .1;
+    animation: beat 1s linear 0s infinite;
+    animation-play-state: paused;
+}
+@keyframes beat{
+    50%{
+        transform: scaleY(0);
+    }
+}
+.body_content .beat_animation li:nth-child(1){
+    animation-delay: .2s;
+}
+.body_content .beat_animation li:nth-child(2){
+    animation-delay: .4s;
+}
+.body_content .beat_animation li:nth-child(4){
+    animation-delay: .3s;
+}
